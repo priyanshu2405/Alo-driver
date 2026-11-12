@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "889635632150",
+    "project_id": "alo-ride-driver-app",
+    "storage_bucket": "alo-ride-driver-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:889635632150:android:e541e74b06d64c8a7ff137",
+        "android_client_info": {
+          "package_name": "com.alo.driver"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfZDRQmq3t2VArTI4VvyGK5glkoaZ7z78"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:889635632150:android:4da7cd07618d757c7ff137",
+        "android_client_info": {
+          "package_name": "com.alo.driverapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfZDRQmq3t2VArTI4VvyGK5glkoaZ7z78"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:889635632150:android:6fb6acd4041ab3de7ff137",
+        "android_client_info": {
+          "package_name": "com.flutter.alo_ride_driver_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfZDRQmq3t2VArTI4VvyGK5glkoaZ7z78"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
