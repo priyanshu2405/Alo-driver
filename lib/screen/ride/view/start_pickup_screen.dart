@@ -5,6 +5,7 @@ import 'package:alo_ride_driver_app/res/common/app_appbar.dart';
 import 'package:alo_ride_driver_app/res/common/app_button.dart';
 import 'package:alo_ride_driver_app/res/common/app_text.dart';
 import 'package:alo_ride_driver_app/res/constant/app_colors.dart';
+import 'package:alo_ride_driver_app/res/constant/app_map_keys.dart';
 import 'package:alo_ride_driver_app/res/utils/map_navigation.dart';
 import 'package:alo_ride_driver_app/res/utils/ride_status_flow.dart';
 import 'package:alo_ride_driver_app/screen/chat/view/chat_entry_button.dart';
@@ -307,7 +308,7 @@ class _StartPickupScreenState extends State<StartPickupScreen> {
   final Set<Marker> markers = {};
   Set<Polyline> polylines = {};
   final PolylinePoints polylinePoints = PolylinePoints(
-    apiKey: 'AIzaSyBDoZWzDdhnnXe0Kuaz0qcPZT_vsUltoxo',
+    apiKey: AppMapKeys.apiKey,
   );
   LatLng? currentDriverLatLng;
   LatLng? destinationLatLng;

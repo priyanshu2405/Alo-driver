@@ -6,6 +6,7 @@ import 'package:alo_ride_driver_app/res/common/app_image.dart';
 import 'package:alo_ride_driver_app/res/common/app_text.dart';
 import 'package:alo_ride_driver_app/res/constant/app_colors.dart';
 import 'package:alo_ride_driver_app/res/constant/app_images.dart';
+import 'package:alo_ride_driver_app/res/constant/app_map_keys.dart';
 import 'package:alo_ride_driver_app/res/utils/map_navigation.dart';
 import 'package:alo_ride_driver_app/res/utils/ride_status_flow.dart';
 import 'package:alo_ride_driver_app/screen/chat/view/chat_entry_button.dart';
@@ -94,7 +95,7 @@ class _ReachedDestinationScreenState extends State<ReachedDestinationScreen> {
   static const double _zDrop = 4;
 
   final PolylinePoints polylinePoints = PolylinePoints(
-    apiKey: 'AIzaSyBDoZWzDdhnnXe0Kuaz0qcPZT_vsUltoxo',
+    apiKey: AppMapKeys.apiKey,
   );
 
   GoogleMapController? mapController;

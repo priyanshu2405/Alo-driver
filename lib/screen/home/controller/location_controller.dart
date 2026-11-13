@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:geocoding/geocoding.dart';
+import 'package:alo_ride_driver_app/res/constant/app_map_keys.dart';
 import 'package:http/http.dart' as http;
 
 class LocationController extends GetxController {
@@ -22,7 +23,7 @@ class LocationController extends GetxController {
   RxString currentAddress = "Getting location...".obs;
   GoogleMapController? googleController;
 
-  static const String _apiKey = "AIzaSyBDoZWzDdhnnXe0Kuaz0qcPZT_vsUltoxo";
+  static String get _apiKey => AppMapKeys.apiKey;
 
   @override
   void onInit() {
