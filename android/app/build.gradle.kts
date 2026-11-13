@@ -1,5 +1,6 @@
 import java.util.Properties
 import java.io.FileInputStream
+import java.io.File
 
 plugins {
     id("com.android.application")
@@ -29,10 +30,6 @@ android {
         isCoreLibraryDesugaringEnabled = true
     }
 
-    kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_17.toString()
-    }
-
     defaultConfig {
         applicationId = "com.alo.driverapp"
 
@@ -50,7 +47,11 @@ android {
         create("release") {
             keyAlias = keystoreProperties["keyAlias"]?.toString()
             keyPassword = keystoreProperties["keyPassword"]?.toString()
-            storeFile = file(keystoreProperties["storeFile"]?.toString())
+            val storeFilePath = keystoreProperties["storeFile"]?.toString()
+            if (storeFilePath != null) {
+                val candidate = file(storeFilePath)
+                storeFile = if (candidate.exists()) candidate else rootProject.file(File(storeFilePath).name)
+            }
             storePassword = keystoreProperties["storePassword"]?.toString()
         }
     }
@@ -72,6 +73,12 @@ dependencies {
 
     implementation(platform("com.google.firebase:firebase-bom:34.1.0"))
     implementation("com.google.firebase:firebase-analytics")
+}
+
+kotlin {
+    compilerOptions {
+        jvmTarget = org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17
+    }
 }
 
 flutter {
